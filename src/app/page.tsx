@@ -6,7 +6,7 @@ export default async function Home (){
   return(
     <div>
       {res.map((placeholder:any)=>(
-        <div>
+        <div key={placeholder.id}>
           <Link href={`${placeholder.id}`}>
           <h1>{placeholder.name}</h1>
           </Link>
